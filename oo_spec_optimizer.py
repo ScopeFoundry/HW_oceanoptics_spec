@@ -95,8 +95,8 @@ class OOSpecOptimizerMeasure(Measurement):
             
 #             if ~self.oo_spec.activation.val:
 #                 self.oo_spec.activation.update_value(True)
-            #self.oo_spec.run()
-            self.start_nested_measure_and_wait(self.oo_spec)
+            self.oo_spec.run()
+            # self.start_nested_measure_and_wait(self.oo_spec)
             spec = self.oo_spec.hw.spectrum.copy()
             
             if self.oo_spec.settings['baseline_subtract']:
