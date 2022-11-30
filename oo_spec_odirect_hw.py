@@ -8,7 +8,7 @@ class OceanOpticsSpectrometerODirectHW(HardwareComponent):
     def setup(self):
         S = self.settings
         # Create logged quantities
-        S.New(name="int_time", dtype=float, ro=False, vmin=0.0001, vmax=1000, unit='s', initial=0.1,)
+        S.New(name="int_time", dtype=float, ro=False, vmin=0.0001, vmax=1000, unit='s', initial=0.1,spinbox_decimals=4)
         #S.New('dev_id', dtype=int, initial=-1)
         S.New('serial_num', dtype=str, initial='auto', ro=False)
         
